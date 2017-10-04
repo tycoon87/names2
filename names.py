@@ -16,22 +16,22 @@ users = {
      {'first_name' : 'Martin', 'last_name' : 'Puryear'}
   ]
  }
-#def names(x):
-#    for i in range(0,len(x)):
-#        print x[i]['first_name'], x[i]['last_name']
-#names(students)
+def names(x):
+    for i in range(0,len(x)):
+        print x[i]['first_name'], x[i]['last_name']
+names(students)
                                             
 def name(x):
     for i in x: 
         print i
         if i == 'Students':
-            print "i is == students"
+#            print "i is == students"
             for j in x[i]:
 #                print j
                 print j['first_name'], j['last_name']
-        elif i == ['Instructors']:
-            print "i is == instructors"
+        elif i == 'Instructors':
+#            print "i is == instructors"
             for j in x[i]:
-                print j
-                print j['first_name'], [j]['last_name']
+#                print j
+                print j['first_name'], j['last_name']
 name(users)
